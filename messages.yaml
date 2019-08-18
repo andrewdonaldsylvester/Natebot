@@ -1,0 +1,119 @@
+'welcome':
+  "\nWelcome to your personal text channel with nate, a Minecraft coordinates
+   bot for discord servers. Only you can read these messages. Use this channel
+   to type commands. For information on commands type `nate help` or for help
+   with a specific command type `nate help <command name>`."
+'syntax_error':
+  "{} is not correct syntax. Type `nate help{}` for the correct syntax."
+'added_public':
+  "\nI have added the location '{}' with the coordinates {} {}{} to everyone's list."
+'added_private':
+  "\nI have added the location '{}' with the coordinates {} {}{} to only your list."
+'add_help':
+  "The `add` command is used to add locations to either your private branch
+  or everyone's public branch. The syntax for `add` looks like this:
+  \n\n\t\t\t`nate add <private/public/ > <location name> <x> <y(optional)> <z>`.\n\n
+  You do not need to put private or public. If you leave this space empty
+  it will default to public. You do not need to put the y-coordinate in either.
+  The name has to only contain letters and cannot have spaces in it.
+  An example of the add command looks like this:
+  \n\n\t\t\t   `nate add public OceanMonument -445 36 -287`.\n\n
+  This would add a location named 'OceanMonument' located at the coordinates
+  x = -445, y = 36, z = -287 to your private branch."
+'remove_owner_none':
+  "I could not find any coordinates under any branch with the name '{}'"
+'remove_default_none':
+  "\nI could not find any coordinates under your branch with the name '{}'
+  and the coordinates {} {}{}. If the coordinates you were looking to
+  remove are located in the public branch you do not have sufficient permissions.
+  Ask the server owner to remove something from the public branch."
+'remove_private':
+  "I have removed the coordinates in your branch under the name '{}' at the location {} {}{}."
+'remove_public':
+  "I have removed the coordinates in the public branch under the name '{}' at the location {} {}{}."
+'remove_multiple':
+  "I have found multiple coordinates with the name {}.
+  Please specify which one you would like to remove
+  by telling me what it's coordinates are."
+'remove_help':
+  "The `remove` command is used to remove locations
+   from your private branch.
+   Only the server's owner can remove locations from the public branch.
+   The syntax for `remove` looks like this:
+   \n\n\t\t\t`nate remove <location name> <x> <y(optional)> <z>`.
+  \n\nThe given coordinates should be
+   in the same order and have the same values as they did when they were added.
+   If you are unsure of what values were added the first time
+   you can use the `list` command to find out.
+   An example of the `remove` command looks like this:
+   \n\n\t\t\t`nate remove OceanMonument -445 36 -287`.\n\n
+  This would remove the OceanMonument location that was added
+   in the `add` example."
+'list_none':
+  "I could not find any locations with the name {}."
+'list_closest':
+  "The closest location with the name '{}' is {} block{} away at coordinates {}."
+'list_all':
+  "You have {} location{} named '{}'."
+'list_coordinates':
+  "\n{} {}{}"
+'list_private':
+  "\nYou have {} private location{}{}{}"
+'list_public':
+  "\nYou have {} public location{}{}{}"
+'list_name':
+  "\n'{}'"
+'list_help':
+  "The `list` command is used to find the name and location
+  of certain coordinates. It can only show you coordinates
+  in the public branch and your private branch.
+  The syntax for `list` looks like this:
+  \n\n\t\t\t`nate list <location name> <your coordinates>`.
+  \n\nThe location name and your coordinates a both optional.
+  If you run `list` without either of these it will show you the names
+  of all your locations. If you run it with only the location name
+  it will show you all the coordinates that are assigned that location name.
+  If you run it with your coordinates it will tell you the closest coordinates
+  with that name and how far away it is. An example of the `list` command
+  looks like this: \n\n\t\t\t`nate list OceanMonument (47,32)`.
+  \n\nThis would find the closest OceanMonument location
+  to the coordinates x = 47, z = 32. "
+'clear_none_public':
+  "I could not find any coordinates in the public branch to remove."
+'clear_public_fail':
+  "You do not have sufficient permissions to remove all coordinates from the public branch.
+  Ask the server owner to remove all coordinates from the public branch."
+'clear_none_private':
+  "I could not find any coordinates in your private branch to remove."
+'clear_public':
+  "I have removed all coordinates from the public branch."
+'clear_private':
+  "I have removed all coordinates from your private branch."
+'clear_help':
+  "The `clear` command is used to remove all coordinates
+   from a specific branch. Only the server owner can clear
+   the public branch, anyone can clear their own private branch.
+   The syntax for `clear` looks like this:
+   \n\n\t\t\t`nate clear <private/public/ >`
+  \n\nIf the third option is left blank it will
+   default to clearing the private branch.
+   An example of clear looks like this:
+   \n\n\t\t\t`nate clear private`
+  \n\nThis would clear the sender's private branch."
+'help':
+  "\nNateBot is a Minecraft coordinates bot for discord.
+  To call a command type `nate` before your message to
+  let the bot know you are talking to it. The supported
+  commands are: `add`, `remove`, `list`, `clear`, and `help`.
+  You can type `nate help <command name> ` for information on a certain command."
+'help_help':
+  "The `help` command is used to find out how to use certain commands.
+   The syntax for `help` looks like this:
+   \n\n\t\t\t`nate help <command name>`
+   \n\nIf you leave out the command name it will list all
+   of the commands. If you include the command name it will
+   tell you how to use that command. An example of the `help`
+   command looks like this: \n\n\t\t\t`nate help add`
+  \n\nThis would tell you how to use the `add` command."
+'not_command':
+    "'{}' is not a command. Type `nate help` for a list of commands."

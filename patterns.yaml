@@ -1,0 +1,6 @@
+'message': '(nate)\s*(\w+)\s*(.*)'
+'add': '(public|private|)\s*(\w*)\s+([-]?\d*)\s*([-]?\d*)\s*([-]?\d*).*'
+'remove': '(\w*)\s*([-]?\d*)\s*([-]?\d*)\s*([-]?\d*).*'
+'list': '(\w*)\s*(-?\d*)\s*(-?\d*)\s*(-?\d*).*'
+'clear': '(public|private|)'
+'help': '(\w*)'
